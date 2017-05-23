@@ -2,25 +2,21 @@
 
 int main()
 {
-	/*       -힌트
-	int h=0;
-	int g=2;
-	for(h = 0; h < 5; h++ )
-	{
-		printf("%3d", h *= g);
-	}	*/
-	int i=0;
-	int j=0;
-	while ( i <= 5 )
-	{
-		while( j <= 5 )
+	/* 문제 : while 문을 for 문으로 바꾸기
+	int i, nSum = 0;
+	i = 1;
+		while ( i <= 100 )
 		{
-			printf("%7d", j);
-			j++;
+			nSum += i;
+			i++;
 		}
-		j=0;
-		printf("\n");
-		i++; 
+	printf("%d\n", nSum );
+	return 0; */
+	int i, nSum = 0;
+	for ( i = 1; i <= 100; i++)
+	{
+		nSum += i;
 	}
+	printf("%d\n", nSum);
 	return 0;
 }
